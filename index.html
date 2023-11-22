@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPOO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="javaLogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="javaLogo.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--barra de navegação-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img2" src="javaLogo.png" width="40"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;POO</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+            <li><a href="#poo"  id="sec" class="cir_border">POO</a></li>
+            <li><a href="#saibamais" id="tri" class="cir_border">Saiba Mais </a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--barra de navegação-->
+
+    <header id="home">
+        <div class="header-content">
+            <h2  id="quote">ENCAPSULAMENTO, HERANÇA E POLIMORFISMO: AS PRINCIPAIS CARACTERÍSTICAS DA POO.</h2>
+            <div class="line"></div>
+            <h1 >A MARAVILHA DA PROGRAMAÇÃO </h1>
+            <a href="poo.html" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Saiba mais</a>
+        </div>
+        <div>
+</div>
+    </header>
+    <!-- Apresetação -->
+    <section id="poo">
+            <div class="line"></div>
+        </div>
+        <br>
+        <div id="about_us">
+            <div class="boxx">
+                <div class="containerx">
+					<input type="radio" name="slider" id="item-1" checked>
+					<input type="radio" name="slider" id="item-2">
+					<input type="radio" name="slider" id="item-3">
+				  <div class="cards">
+					<label class="cardt" for="item-1" id="col-img-1">
+					  <img  src ="Heranca.png">
+					</label>
+					<label class="cardt" for="item-2" id="col-img-2">
+					  <img src="Encapsulamento.png">
+					</label>
+					<label class="cardt" for="item-3" id="col-img-3">
+					  <img src="polimorfismo.png">
+					</label>
+				  </div>
+				</div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Apresentação -->
+
+    
+
+    <!--Barra de pesquisa-->
+    <section id="saibamais">
+    <center><p>Digte o item que deseja procurar:
+        <input type="text" placeholder="Inforne um texto" id="valor">
+        <button onclick="MudaDesenho()">Saiba já!</button><p></center>
+    <h1></h1>
+    <h2></h2>
+  </section>
+
+    <!--Barra de pesquisa-->
+
+
+    <!--rodapé-->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <section class="rodape">
+        <div class="social">
+           
+        </div>
+
+     <!--rodapé-->
+      
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+
+     
